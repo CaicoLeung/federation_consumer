@@ -15,8 +15,10 @@ export default defineConfig({
           remotes: {
             federation_provider:
               'federation_provider@http://localhost:3000/mf-manifest.json',
+            federation_provider_vue3:
+              'federation_provider_vue3@http://localhost:3001/mf-manifest.json',
           },
-          shared: ['react', 'react-dom'],
+          shared: ['react', 'react-dom', 'vue', 'vue-router'],
         }),
       ],
     },
