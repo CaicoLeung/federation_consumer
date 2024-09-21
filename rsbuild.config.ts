@@ -14,7 +14,7 @@ export default defineConfig({
           name: 'federation_consumer',
           remotes: {
             federation_provider:
-              'federation_provider@http://localhost:3000/mf-manifest.json',
+              'federation_provider@http://localhost:3002/mf-manifest.json',
             federation_provider_vue3:
               'federation_provider_vue3@http://localhost:3001/mf-manifest.json',
           },
