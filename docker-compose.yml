@@ -1,0 +1,20 @@
+version: '3'
+
+name: module-federation
+
+services:
+  caddy:
+    container_name: caddy
+    image: caddy
+    restart: always
+    volumes:
+      - caddy-config:/config
+      - caddy-data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./dist:/usr/share/caddy
+    ports:
+      - "80:80"
+
+volumes:
+  caddy-config:
+  caddy-data:
